@@ -1,0 +1,14 @@
+.ans.close {
+    display: none;
+  }
+  .ans.show {
+    display: block;
+  }
+  .FAQItem.active {
+    background: #5f9ea03d;
+    padding: 10px;
+    border: none;
+  }
+  .FAQItem {
+    padding: 10px;
+  }  

@@ -1,0 +1,46 @@
+.banner.img{
+    position: relative;
+}
+.banner.img img{
+    width:100%;
+    filter: brightness(0.7);
+}
+
+.font-60{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: calc(30px + 30 * ((100vw - 360px) / 1560));
+line-height: calc(36px + 28 * ((100vw - 360px) / 1560));
+margin:0;
+}
+p.bannerTag {
+    font-style: normal;
+    font-weight: 600;
+    font-size:calc(16px + 8 * ((100vw - 360px) / 1560));
+    line-height: calc(16px + 8 * ((100vw - 360px) / 1560));
+    font-family: 'Poppins';
+    margin-bottom:0;
+}
+p.bannersubText.font-20 {
+    margin-top: 12px;
+}
+@media screen and (min-width:768px){
+    .bannerText {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        transform: translate(-10%, -10%);
+        color: white;
+        text-align: left;
+    }
+} 
+@media screen and (max-width:767px){
+.bannerText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+}

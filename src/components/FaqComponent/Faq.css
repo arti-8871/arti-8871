@@ -1,0 +1,225 @@
+h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #0055d2;
+  margin: 0;
+}
+.font-20{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: calc(14px + 6 * ((100vw - 360px ) / 1560));
+line-height: calc(18px + 8 * ((100vw - 360px ) / 1560));
+letter-spacing: -0.02em;
+}
+.ans.close,.faq.hide {
+  display: none;
+}
+.faq.show {
+  display: block;
+}
+/* .ans.show{
+  height:calc(20px + 20 * ((100vw - 360px ) / 1560));
+
+} */
+.ans.close {
+  overflow: hidden;  
+  line-height: 50px;
+  transition: all .20s ease-in-out;
+  height: 0;
+}
+.faq {
+  text-align: left;
+}
+.FAQItem.active {
+  background: #f2f8ff;
+  /* padding: 10px; */
+  border: none;
+}
+.FAQItem {
+  padding: calc(20px + 20 * ((100vw - 360px ) / 1560));
+  border-bottom: 1px solid #1495dd;
+}
+ul.sideBarItems {
+  list-style: none;
+  border-bottom: 2px solid #1495dd;
+  padding-bottom: 30px;
+  padding-left: 0;
+}
+.ComponentTab {
+  padding: 0 5%;
+}
+.SideItem {
+  text-align: left;
+  color: blue;
+}
+li.item {
+  margin: 6px 0;
+  padding: 5px 12px;
+  color: #0055d2;
+  opacity: 0.5;
+}
+a.reachBtn {
+  border: 1px solid #0055d2;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 30px 30px 0px 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.ques {
+  position: relative;
+  color: #495566;
+  font-weight: 500;
+  font-size: calc(16px + 12 * ((100vw - 360px ) / 1560));
+  line-height: calc(20px + 20 * ((100vw - 360px ) / 1560));
+  display: flex;
+  justify-content: space-between;
+  /* margin: 15px; */
+}
+.FAQItem .ans {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(14px + 6 * ((100vw - 360px ) / 1560));;
+  line-height: calc(20px + 20 * ((100vw - 360px ) / 1560));
+  letter-spacing: -0.02em;
+  color: #71809e;
+  width:90%;
+}
+.plus.hide {
+  display: none;
+}
+.plus.show {
+  display: block;
+}
+
+@media screen and (min-width: 769px) {
+  .Mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .SidePoint {
+    width: 30%;
+  }
+  .faq {
+    display: block;
+    text-align: left;
+    padding: 5%;
+    padding-top: 0;
+    width: 68.12vw;
+  }
+  .Sidebar {
+    width: 31.87vw;
+    border-right: 2px solid #1495dd;
+    padding-top: 0px;
+  }
+  .ans.show {
+    height: 5.20vw;
+}
+}
+@media screen and (max-width: 768px) {
+  .ques{
+    font-size: 4.44vw;
+    line-height:8.89vw;
+  }
+ 
+  .swiper-slide.item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #0055d2;
+  }
+  .swiper-slide.item.swiper-slide-active {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid;
+    background: #e1e9f6;
+    border: 1px solid #0055d2;
+    border-radius: 30px;
+  }
+  .Sidebar .swiper-wrapper {
+    align-items: center;
+    margin-bottom: 33px;
+  }
+  .FaqContainer {
+    flex-direction: column;
+  }
+  li.item {
+    display: inline;
+  }
+
+  ul.sideBarItems,
+  .SideItem {
+    border: none;
+  }
+  .border-bottoms {
+    border-bottom: 1px solid aqua !important;
+    padding-bottom: 39px;
+    padding-left: 0;
+    padding-top: 12px;
+  }
+  .Mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .sidebar {
+    flex-direction: column;
+  }
+  .footerLink {
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    /* justify-content: flex-start; */
+    align-items: unset;
+  }
+
+  .bannerText {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 67%;
+    text-align: CENTER;
+  }
+  .SidePoint {
+    padding: 10px 19px;
+  }
+  .sidebar {
+    margin-top: 20px;
+  }
+}
+.FaqContainer {
+  display: flex;
+  margin-bottom:0 !important;
+  margin: 6.25vw 5.2vw;
+}
+.plus span {
+  position: relative;
+  left: 1px;
+  top: -10px;
+}
+p.reachOut {
+  margin-bottom: 38px;
+}
+.plus.show svg {
+  transform: rotate(-180deg);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .5s;
+  fill: BLUE;
+}

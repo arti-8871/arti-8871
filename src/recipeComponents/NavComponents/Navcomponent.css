@@ -1,0 +1,108 @@
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+input#searchBox {
+  height: 26px;
+  width: 19%;
+  padding: 10px;
+}
+
+li.recipeItem {
+  padding: 10px;
+  text-align: left;
+  background: darkblue;
+  color: white;
+}
+
+div#recipeImg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div#recipeImg {
+  width: 150px;
+  height: 150px;
+}
+
+.recipesFiltered {
+  padding: 20px;
+  text-align: left;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.dishMenu {
+  /* align-items: center; */
+  justify-content: flex-start;
+  flex: 37%;
+  padding: 30px;
+}
+
+/* random=========== */
+.rotationImg {
+  animation: 2s linear 0s infinite normal none running rotation;
+  width: 48px;
+  position: absolute;
+  right: 10%;
+  top: 29%;
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+.randomHeading {
+  opacity: 0.3;
+}
